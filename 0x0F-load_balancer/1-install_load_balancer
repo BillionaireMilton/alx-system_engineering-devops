@@ -34,14 +34,14 @@ defaults
   timeout server 15s
   timeout http-request 10s
 
-frontend clickviral-tech-frontend
+frontend miltonintel-tech-frontend
     bind *:80
-    default_backend clickviral-tech-backend
+    default_backend miltonintel-tech-backend
 
-backend clickviral-tech-backend
+backend miltonintel-tech-backend
     balance roundrobin
-    server 151666-web-01 100.25.190.21:80 check
-    server 151666-web-02 54.160.77.90:80 check
+    server 114853-web-01 54.208.173.202:80 check
+    server 114853-web-02 54.157.182.75:80 check
 "
 
 # shellcheck disable=SC2154
