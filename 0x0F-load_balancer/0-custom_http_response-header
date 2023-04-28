@@ -74,6 +74,8 @@ server_config=\
 		}
 }"
 
+echo -e "\nAlmost Done.\n"
+
 #shellcheck disable=SC2154
 echo "$server_config" | sudo dd status=none of=/etc/nginx/sites-enabled/default
 
